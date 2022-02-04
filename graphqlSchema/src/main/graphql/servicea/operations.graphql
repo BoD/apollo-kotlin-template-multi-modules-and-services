@@ -1,0 +1,15 @@
+query ServiceAQuery1 {
+    computers {
+        id
+        ... on Computer {
+            cpu
+            year
+            screen {
+                resolution
+                ... on Screen {
+                    isColor
+                }
+            }
+        }
+    }
+}

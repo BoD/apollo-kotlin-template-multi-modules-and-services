@@ -1,0 +1,8 @@
+query ServiceBQuery2 {
+    animals {
+        ... on Animal {
+            id
+            name
+        }
+    }
+}
