@@ -1,21 +1,29 @@
 package com.example.main
 
-import com.example.servicea.ServiceAQuery1Query
-import com.example.servicea.ServiceAQuery2Query
-import com.example.serviceb.ServiceBQuery1Query
-import com.example.serviceb.ServiceBQuery2Query
+import com.example.servicea.Feature1ServiceAQuery
+import com.example.servicea.Feature2ServiceAQuery
+import com.example.servicea.SchemaModuleServiceAQuery
+import com.example.serviceb.Feature1ServiceBQuery
+import com.example.serviceb.Feature2ServiceBQuery
+import com.example.serviceb.SchemaModuleServiceBQuery
 
 fun main() {
     // Defined in :graphqlSchema / service-a
-    ServiceAQuery1Query()
+    SchemaModuleServiceAQuery()
 
     // Defined in :feature1 / service-a
-    ServiceAQuery2Query()
+    Feature1ServiceAQuery()
+
+    // Defined in :feature2 / service-a
+    Feature2ServiceAQuery()
 
 
     // Defined in :graphqlSchema / service-b
-    ServiceBQuery1Query()
+    SchemaModuleServiceBQuery()
 
     // Defined in :feature1 / service-b
-    ServiceBQuery2Query()
+    Feature1ServiceBQuery()
+
+    // Defined in :feature2 / service-b
+    Feature2ServiceBQuery()
 }

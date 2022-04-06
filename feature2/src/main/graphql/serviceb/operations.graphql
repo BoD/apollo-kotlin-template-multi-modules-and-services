@@ -1,4 +1,4 @@
-query Feature1ServiceBQuery {
+query Feature2ServiceBQuery {
     animals {
         ... on Animal {
             id

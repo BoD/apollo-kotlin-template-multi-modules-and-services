@@ -1,1 +1,1 @@
-include(":graphqlSchema", ":feature1", ":app")
+include(":graphqlSchema", ":feature1", ":feature2", ":app")

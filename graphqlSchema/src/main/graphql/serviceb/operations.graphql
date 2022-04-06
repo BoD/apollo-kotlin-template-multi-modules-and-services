@@ -1,4 +1,4 @@
-query ServiceBQuery1 {
+query SchemaModuleServiceBQuery {
     animals {
         ... on Animal {
             id

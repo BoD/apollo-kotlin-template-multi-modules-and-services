@@ -7,9 +7,12 @@ type Computer {
 	cpu: String!
 	year: Int!
 	screen: Screen!
+	releaseDate: Date
 }
 
 type Screen {
 	resolution: String!
 	isColor: Boolean!
 }
+
+scalar Date

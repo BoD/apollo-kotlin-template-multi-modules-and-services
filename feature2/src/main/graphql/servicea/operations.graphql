@@ -1,4 +1,4 @@
-query Feature1ServiceAQuery {
+query Feature2ServiceAQuery {
     computers {
         id
         ... on Computer {

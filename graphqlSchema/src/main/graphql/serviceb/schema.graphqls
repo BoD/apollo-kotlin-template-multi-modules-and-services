@@ -5,4 +5,7 @@ type Query {
 type Animal {
 	id: ID!
 	name: String!
+	adoptedDate: Date
 }
+
+scalar Date

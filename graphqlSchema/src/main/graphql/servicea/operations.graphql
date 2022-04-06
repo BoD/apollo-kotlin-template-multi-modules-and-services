@@ -1,4 +1,4 @@
-query ServiceAQuery1 {
+query SchemaModuleServiceAQuery {
     computers {
         id
         ... on Computer {
