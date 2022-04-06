@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.apollographql.apollo3", "apollo-runtime", "3.2.1")
+    implementation("com.apollographql.apollo3", "apollo-runtime")
     implementation(project(":graphqlSchema"))
     apolloMetadata(project(":graphqlSchema"))
 }
