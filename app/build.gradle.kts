@@ -13,9 +13,6 @@ dependencies {
     implementation(project(":graphqlSchema"))
     apolloMetadata(project(":graphqlSchema"))
 
-    implementation(project(":feature1"))
-    apolloMetadata(project(":feature1"))
-
     implementation(project(":feature2"))
     apolloMetadata(project(":feature2"))
 }

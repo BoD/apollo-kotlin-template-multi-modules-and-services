@@ -8,8 +8,8 @@ It contains 3 modules:
 ```mermaid
   graph TD;
       app-->graphqlSchema;
-      app-->feature1;
       app-->feature2;
+      feature2-->feature1;
       feature1-->graphqlSchema;
       feature2-->graphqlSchema;
 ```
@@ -25,4 +25,3 @@ It contains 3 modules:
   - Defines 1 additional query for each service
 - `app`
   - Depends on `graphqlSchema`, `feature1` and `feature2`
-  
