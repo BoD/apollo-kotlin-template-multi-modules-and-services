@@ -21,7 +21,8 @@ It contains 3 modules:
   - Depends on `graphqlSchema`
   - Defines 1 additional query for each service
 - `feature2`
+  - Depends on `feature1`
   - Depends on `graphqlSchema`
   - Defines 1 additional query for each service
 - `app`
-  - Depends on `graphqlSchema`, `feature1` and `feature2`
+  - Depends on `graphqlSchema`, `feature2` (and transitively on `feature1`)
