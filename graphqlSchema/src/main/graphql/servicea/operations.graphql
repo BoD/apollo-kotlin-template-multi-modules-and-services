@@ -1,4 +1,5 @@
 query SchemaModuleServiceAQuery {
+    a
     computers {
         id
         ... on Computer {

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "servicea": {
+      "includes": [
+        "src/main/graphql/servicea/*"
+      ]
+    },
+    "serviceb": {
+      "includes": [
+        "src/main/graphql/serviceb/*"
+      ]
+    }
+  }
+}
