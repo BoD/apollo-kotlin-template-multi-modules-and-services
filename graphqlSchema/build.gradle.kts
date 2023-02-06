@@ -9,6 +9,7 @@ repositories {
 
 dependencies {
     implementation("com.apollographql.apollo3", "apollo-runtime")
+    testImplementation(kotlin("test"))
 }
 
 apollo {
