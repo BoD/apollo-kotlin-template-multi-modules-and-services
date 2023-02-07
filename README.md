@@ -1,4 +1,4 @@
-# Multi modules and services project with Apollo Kotlin 3 sample
+# Sample: Apollo Kotlin 3 with multiple modules and services
 
 This is a minimalist sample of a project with several modules and services
 using [Apollo Kotlin 3](https://www.apollographql.com/docs/kotlin).
