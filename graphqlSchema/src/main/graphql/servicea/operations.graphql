@@ -12,5 +12,11 @@ query SchemaModuleServiceAQuery {
                 }
             }
         }
+
+        ...SchemaModuleServiceAFragment
     }
+}
+
+fragment SchemaModuleServiceAFragment on Computer {
+    id
 }

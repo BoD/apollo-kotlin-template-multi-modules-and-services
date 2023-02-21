@@ -1,0 +1,19 @@
+{
+  "projects": {"app/service-a": {
+  "includes": ["graphqlSchema/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/schema.graphqls","graphqlSchema/src/main/graphql/servicea/extra.graphqls","feature1/src/main/graphql/servicea/*","feature2/src/main/graphql/servicea/*"  ]
+},"app/service-b": {
+  "includes": ["graphqlSchema/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/schema.graphqls","graphqlSchema/src/main/graphql/serviceb/extra.graphqls","feature1/src/main/graphql/serviceb/*","feature2/src/main/graphql/serviceb/*"  ]
+},"feature1/service-a": {
+  "includes": ["feature1/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/schema.graphqls","graphqlSchema/src/main/graphql/servicea/extra.graphqls"  ]
+},"feature1/service-b": {
+  "includes": ["feature1/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/schema.graphqls","graphqlSchema/src/main/graphql/serviceb/extra.graphqls"  ]
+},"feature2/service-a": {
+  "includes": ["feature2/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/schema.graphqls","graphqlSchema/src/main/graphql/servicea/extra.graphqls"  ]
+},"feature2/service-b": {
+  "includes": ["feature2/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/schema.graphqls","graphqlSchema/src/main/graphql/serviceb/extra.graphqls"  ]
+},"graphqlSchema/service-a": {
+  "includes": ["graphqlSchema/src/main/graphql/servicea/*","graphqlSchema/src/main/graphql/servicea/schema.graphqls","graphqlSchema/src/main/graphql/servicea/extra.graphqls"  ]
+},"graphqlSchema/service-b": {
+  "includes": ["graphqlSchema/src/main/graphql/serviceb/*","graphqlSchema/src/main/graphql/serviceb/schema.graphqls","graphqlSchema/src/main/graphql/serviceb/extra.graphqls"  ]
+}  }
+}          

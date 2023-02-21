@@ -22,6 +22,9 @@ apollo {
         // module, which would clash. So we force generating in this module instead. 
         // See https://www.apollographql.com/docs/kotlin/advanced/multi-modules/#type-clashes
         alwaysGenerateTypesMatching.set(listOf("Date"))
+
+
+        schemaFiles.from(file("src/main/graphql/servicea/schema.graphqls"), file("src/main/graphql/servicea/extra.graphqls"))
     }
 
     service("service-b") {

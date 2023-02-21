@@ -12,5 +12,8 @@ query Feature1ServiceAQuery {
                 }
             }
         }
+        ...SchemaModuleServiceAFragment
     }
+
+    a
 }

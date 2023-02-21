@@ -1,6 +1,7 @@
 type Query {
 	computers: [Computer!]!
 	a: String
+	date2: Date2
 }
 
 type Computer {

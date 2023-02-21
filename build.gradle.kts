@@ -1,9 +1,18 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
 plugins {
     kotlin("jvm") version "1.8.0"
-    id("com.apollographql.apollo3") version "3.7.4" apply false
+    id("com.apollographql.apollo3") version "4.0.0-SNAPSHOT" apply false
 }
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
 }
-

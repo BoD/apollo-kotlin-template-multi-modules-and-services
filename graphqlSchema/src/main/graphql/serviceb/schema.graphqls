@@ -1,7 +1,9 @@
 type Query {
 	animals: [Animal!]!
+	a: Int
 	b: String
 	c: Int
+	date2: Date2
 }
 
 type Animal {
