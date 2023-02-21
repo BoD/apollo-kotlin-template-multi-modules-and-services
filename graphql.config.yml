@@ -1,0 +1,49 @@
+projects:
+  app/service-a:
+    include:
+      - graphqlSchema/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/schema.graphqls
+      - graphqlSchema/src/main/graphql/servicea/extra.graphqls
+      - feature1/src/main/graphql/servicea/*
+      - feature2/src/main/graphql/servicea/*
+  app/service-b:
+    include:
+      - graphqlSchema/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+      - graphqlSchema/src/main/graphql/serviceb/extra.graphqls
+      - feature1/src/main/graphql/serviceb/*
+      - feature2/src/main/graphql/serviceb/*
+  feature1/service-a:
+    include:
+      - feature1/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/schema.graphqls
+      - graphqlSchema/src/main/graphql/servicea/extra.graphqls
+  feature1/service-b:
+    include:
+      - feature1/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+      - graphqlSchema/src/main/graphql/serviceb/extra.graphqls
+  feature2/service-a:
+    include:
+      - feature2/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/schema.graphqls
+      - graphqlSchema/src/main/graphql/servicea/extra.graphqls
+  feature2/service-b:
+    include:
+      - feature2/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+      - graphqlSchema/src/main/graphql/serviceb/extra.graphqls
+  graphqlSchema/service-a:
+    include:
+      - graphqlSchema/src/main/graphql/servicea/*
+      - graphqlSchema/src/main/graphql/servicea/schema.graphqls
+      - graphqlSchema/src/main/graphql/servicea/extra.graphqls
+  graphqlSchema/service-b:
+    include:
+      - graphqlSchema/src/main/graphql/serviceb/*
+      - graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+      - graphqlSchema/src/main/graphql/serviceb/extra.graphqls
