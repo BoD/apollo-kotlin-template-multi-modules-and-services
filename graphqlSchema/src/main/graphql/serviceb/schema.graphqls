@@ -1,19 +1,12 @@
 type Query {
-	animals: [Animal!]!
-	a: Int
-	b: String
-	c: Int
-	date2: Date2
+	a: A
+	b: B
 }
 
-type Animal {
+type A {
 	id: ID!
-	name: String!
-	adoptedDate: Date
 }
 
-scalar Date
-
-type CommonType {
-	fieldB: String
+type B {
+	id: ID!
 }

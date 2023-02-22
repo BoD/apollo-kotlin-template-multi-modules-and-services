@@ -6,4 +6,4 @@ pluginManagement {
     }
 }
 
-include(":graphqlSchema", ":feature1", ":feature2", ":app")
+include(":graphqlSchema")

@@ -1,29 +1,17 @@
 type Query {
-	computers: [Computer!]!
-	a: String
-	date2: Date2
+	a: A
+	b: B
+	c: C
 }
 
-type Computer {
+type A {
 	id: ID!
-	cpu: String!
-	year: Int!
-	screen: Screen!
-	releaseDate: Date
 }
 
-type Screen {
-	resolution: String!
-	isColor: Boolean!
+type B {
+	id: ID!
 }
 
-scalar Date
-
-scalar A
-scalar B
-scalar C
-scalar D
-
-type CommonType {
-	fieldA: String
+type C {
+	id: ID!
 }

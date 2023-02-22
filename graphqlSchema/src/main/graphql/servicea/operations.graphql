@@ -1,22 +1,17 @@
-query SchemaModuleServiceAQuery {
-    a
-    computers {
+query QueryA {
+    a {
         id
-        ... on Computer {
-            cpu
-            year
-            screen {
-                resolution
-                ... on Screen {
-                    isColor
-                }
-            }
-        }
-
-        ...SchemaModuleServiceAFragment
     }
 }
 
-fragment SchemaModuleServiceAFragment on Computer {
-    id
+query QueryB {
+    b {
+        id
+    }
+}
+
+query QueryC {
+    c {
+        id
+    }
 }
