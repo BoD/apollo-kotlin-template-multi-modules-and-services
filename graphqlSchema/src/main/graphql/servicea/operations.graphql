@@ -7,10 +7,20 @@ query SchemaModuleServiceAQuery {
             year
             screen {
                 resolution
-                ... on Screen {
-                    isColor
-                }
+                ...ScreenFields
             }
         }
     }
+    commonType {
+        ...CommonTypeFields
+    }
+}
+
+fragment ScreenFields on Screen {
+    isColor
+}
+
+fragment CommonTypeFields on CommonType {
+    fieldA
+    fieldB
 }

@@ -3,14 +3,9 @@ plugins {
     id("com.apollographql.apollo3")
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation("com.apollographql.apollo3", "apollo-runtime")
     implementation(project(":graphqlSchema"))
-    apolloMetadata(project(":graphqlSchema"))
 }
 
 apollo {
@@ -18,11 +13,13 @@ apollo {
         generateApolloMetadata.set(true)
         sourceFolder.set("servicea")
         packageName.set("com.example.servicea")
+        dependsOn(project(":graphqlSchema"))
     }
 
     service("service-b") {
         generateApolloMetadata.set(true)
         sourceFolder.set("serviceb")
         packageName.set("com.example.serviceb")
+        dependsOn(project(":graphqlSchema"))
     }
 }

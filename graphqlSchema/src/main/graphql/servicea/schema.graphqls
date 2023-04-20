@@ -1,6 +1,7 @@
 type Query {
 	computers: [Computer!]!
 	a: String
+	commonType: CommonType
 }
 
 type Computer {
@@ -25,4 +26,5 @@ scalar D
 
 type CommonType {
 	fieldA: String
+	fieldB: String
 }

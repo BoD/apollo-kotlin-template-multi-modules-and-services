@@ -3,10 +3,6 @@ plugins {
     id("com.apollographql.apollo3")
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation("com.apollographql.apollo3", "apollo-runtime")
     testImplementation(kotlin("test"))

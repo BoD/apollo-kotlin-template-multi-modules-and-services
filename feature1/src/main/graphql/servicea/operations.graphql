@@ -7,10 +7,11 @@ query Feature1ServiceAQuery {
             releaseDate
             screen {
                 resolution
-                ... on Screen {
-                    isColor
-                }
+                ...ScreenFields
             }
         }
+    }
+    commonType {
+        ...CommonTypeFields
     }
 }
