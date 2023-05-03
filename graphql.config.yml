@@ -1,0 +1,22 @@
+projects:
+  'graphqlSchema/service-a':
+    schema: graphqlSchema/src/main/graphql/servicea/schema.graphqls
+    include:
+      - graphqlSchema/src/main/graphql/servicea/*.graphql
+
+  'graphqlSchema/service-b':
+    schema: graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+    include:
+      - graphqlSchema/src/main/graphql/serviceb/*.graphql
+
+  'feature1/service-a':
+    schema: graphqlSchema/src/main/graphql/servicea/schema.graphqls
+    include:
+      - feature1/src/main/graphql/servicea/*.graphql
+      - graphqlSchema/src/main/graphql/servicea/*.graphql
+
+  'feature1/service-b':
+    schema: graphqlSchema/src/main/graphql/serviceb/schema.graphqls
+    include:
+      - feature1/src/main/graphql/serviceb/*.graphql
+      - graphqlSchema/src/main/graphql/serviceb/*.graphql
