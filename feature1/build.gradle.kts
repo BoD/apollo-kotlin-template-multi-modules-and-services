@@ -14,6 +14,11 @@ apollo {
         sourceFolder.set("servicea")
         packageName.set("com.example.servicea")
         dependsOn(project(":graphqlSchema"))
+
+        introspection {
+            endpointUrl.set("https://feature2-servicea.com")
+            schemaFile.set(file("src/main/graphql/servicea/schema.graphqls"))
+        }
     }
 
     service("service-b") {
@@ -21,5 +26,10 @@ apollo {
         sourceFolder.set("serviceb")
         packageName.set("com.example.serviceb")
         dependsOn(project(":graphqlSchema"))
+
+        introspection {
+            endpointUrl.set("https://feature2-serviceb.com")
+            schemaFile.set(file("src/main/graphql/serviceb/schema.graphqls"))
+        }
     }
 }
