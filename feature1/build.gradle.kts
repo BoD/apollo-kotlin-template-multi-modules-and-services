@@ -3,10 +3,6 @@ plugins {
     id("com.apollographql.apollo3")
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation("com.apollographql.apollo3", "apollo-runtime")
     implementation(project(":graphqlSchema"))
@@ -18,11 +14,21 @@ apollo {
         generateApolloMetadata.set(true)
         sourceFolder.set("servicea")
         packageName.set("com.example.servicea")
+
+        introspection {
+            endpointUrl.set("https://feature2-servicea.com")
+            schemaFile.set(file("src/main/graphql/servicea/schema.graphqls"))
+        }
     }
 
     service("service-b") {
         generateApolloMetadata.set(true)
         sourceFolder.set("serviceb")
         packageName.set("com.example.serviceb")
+
+        introspection {
+            endpointUrl.set("https://feature2-serviceb.com")
+            schemaFile.set(file("src/main/graphql/serviceb/schema.graphqls"))
+        }
     }
 }

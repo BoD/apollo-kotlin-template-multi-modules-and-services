@@ -3,10 +3,6 @@ plugins {
     id("com.apollographql.apollo3")
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation("com.apollographql.apollo3", "apollo-runtime")
 
@@ -23,8 +19,16 @@ dependencies {
 apollo {
     service("service-a") {
         packageName.set("com.example.servicea")
+        introspection {
+            endpointUrl.set("https://app-servicea.com")
+            schemaFile.set(file("src/main/graphql/servicea/schema.graphqls"))
+        }
     }
     service("service-b") {
         packageName.set("com.example.serviceb")
+        introspection {
+            endpointUrl.set("https://app-serviceb.com")
+            schemaFile.set(file("src/main/graphql/serviceb/schema.graphqls"))
+        }
     }
 }
