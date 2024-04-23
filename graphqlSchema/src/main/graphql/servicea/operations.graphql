@@ -15,12 +15,3 @@ query SchemaModuleServiceAQuery {
         ...CommonTypeFields
     }
 }
-
-fragment ScreenFields on Screen {
-    isColor
-}
-
-fragment CommonTypeFields on CommonType {
-    fieldA
-    fieldB
-}
