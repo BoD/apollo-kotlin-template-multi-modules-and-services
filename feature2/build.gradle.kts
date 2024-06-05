@@ -13,7 +13,7 @@ apollo {
         generateApolloMetadata.set(true)
         sourceFolder.set("servicea")
         packageName.set("com.example.servicea")
-        dependsOn(project(":graphqlSchema"))
+        dependsOn(project(":graphqlSchema"), bidirectional = true)
 
         introspection {
             endpointUrl.set("https://feature1-servicea.com")
@@ -25,7 +25,7 @@ apollo {
         generateApolloMetadata.set(true)
         sourceFolder.set("serviceb")
         packageName.set("com.example.serviceb")
-        dependsOn(project(":graphqlSchema"))
+        dependsOn(project(":graphqlSchema"), bidirectional = true)
 
         introspection {
             endpointUrl.set("https://feature1-serviceb.com")

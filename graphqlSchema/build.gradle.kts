@@ -14,10 +14,10 @@ apollo {
         sourceFolder.set("servicea")
         packageName.set("com.example.servicea")
 
-        // The 'Date' scalar is used in feature1 and feature2, which would normally generate it once in each
-        // module, which would clash. So we force generating in this module instead. 
-        // See https://www.apollographql.com/docs/kotlin/advanced/multi-modules/#type-clashes
-        alwaysGenerateTypesMatching.set(listOf("Date"))
+//        // The 'Date' scalar is used in feature1 and feature2, which would normally generate it once in each
+//        // module, which would clash. So we force generating in this module instead.
+//        // See https://www.apollographql.com/docs/kotlin/advanced/multi-modules/#type-clashes
+//        alwaysGenerateTypesMatching.set(listOf("Date"))
 
         introspection {
             endpointUrl.set("https://schema-servicea.com")
@@ -31,10 +31,10 @@ apollo {
 
         packageName.set("com.example.serviceb")
 
-        // The 'Date' scalar is used in feature1 and feature2, which would normally generate it once in each
-        // module, which would clash. So we force generating in this module instead. 
-        // See https://www.apollographql.com/docs/kotlin/advanced/multi-modules/#type-clashes
-        alwaysGenerateTypesMatching.set(listOf("Date"))
+//        // The 'Date' scalar is used in feature1 and feature2, which would normally generate it once in each
+//        // module, which would clash. So we force generating in this module instead.
+//        // See https://www.apollographql.com/docs/kotlin/advanced/multi-modules/#type-clashes
+//        alwaysGenerateTypesMatching.set(listOf("Date"))
 
         introspection {
             endpointUrl.set("https://schema-serviceb.com")

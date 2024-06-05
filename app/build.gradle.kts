@@ -13,9 +13,9 @@ dependencies {
 apollo {
     service("service-a") {
         packageName.set("com.example.servicea")
-        dependsOn(project(":graphqlSchema"))
-        dependsOn(project(":feature1"))
-        dependsOn(project(":feature2"))
+        dependsOn(project(":graphqlSchema"), bidirectional = true)
+        dependsOn(project(":feature1"), bidirectional = true)
+        dependsOn(project(":feature2"), bidirectional = true)
 
         introspection {
             endpointUrl.set("https://app-servicea.com")
@@ -24,9 +24,9 @@ apollo {
     }
     service("service-b") {
         packageName.set("com.example.serviceb")
-        dependsOn(project(":graphqlSchema"))
-        dependsOn(project(":feature1"))
-        dependsOn(project(":feature2"))
+        dependsOn(project(":graphqlSchema"), bidirectional = true)
+        dependsOn(project(":feature1"), bidirectional = true)
+        dependsOn(project(":feature2"), bidirectional = true)
 
         introspection {
             endpointUrl.set("https://app-serviceb.com")
