@@ -11,7 +11,7 @@ dependencies {
 apollo {
     service("service-a") {
         generateApolloMetadata.set(true)
-        sourceFolder.set("servicea")
+        srcDir("src/main/graphql/servicea")
         packageName.set("com.example.servicea")
         dependsOn(project(":graphqlSchema"), bidirectional = true)
 
@@ -23,7 +23,7 @@ apollo {
 
     service("service-b") {
         generateApolloMetadata.set(true)
-        sourceFolder.set("serviceb")
+        srcDir("src/main/graphql/serviceb")
         packageName.set("com.example.serviceb")
         dependsOn(project(":graphqlSchema"), bidirectional = true)
 

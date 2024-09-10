@@ -11,7 +11,7 @@ dependencies {
 apollo {
     service("service-a") {
         generateApolloMetadata.set(true)
-        sourceFolder.set("servicea")
+        srcDir("src/main/graphql/servicea")
         packageName.set("com.example.servicea")
         introspection {
             endpointUrl.set("https://schema-servicea.com")
@@ -21,7 +21,7 @@ apollo {
 
     service("service-b") {
         generateApolloMetadata.set(true)
-        sourceFolder.set("serviceb")
+        srcDir("src/main/graphql/serviceb")
 
         packageName.set("com.example.serviceb")
         introspection {
